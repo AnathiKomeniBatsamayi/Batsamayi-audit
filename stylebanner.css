@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    
+    
+    padding-left: 300px;
+    padding-right: 300px;
+    
+  }
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header.scrolled {
+    background-color: white;
+    color: black;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-height: 50px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add margin for separation */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+    transition: color 0.3s; /* Smooth transition for the text color property */
+}
+
+header.scrolled .text {
+    color: black; /* Change the text color when scrolling */
+}
+
+.text.bold {
+    font-weight: bolder;
+    font-size: small;
+}
+
+.banner {
+    height: 700px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 100px; /* Adjust the padding as needed */
+    
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.content {
+    padding: 20px;
+}
+
+/* Style your navigation menu as needed */
+nav {
+    display: flex;
+    background-color: transparent;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth transition for the text color property */
+}
+
+header.scrolled nav a {
+    color: black; /* Change the navigation text color when scrolling */
+}
+  /* Add your carousel styles here */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px; /* Set the desired height for your banners */
+    color: rgba(6, 33, 51, 0.2);
+}
+.carousel-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 8, 14, 0.2); /* Set your desired overlay color with transparency */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Ensure the carousel height matches the banners */
+}
+
+.banner {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+  
+.carousel-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicator-line {
+    width: 80px; /* Set the desired width for the line */
+    height: 5px; /* Set the desired height for the line */
+    background-color: #888; /* Set the default color for the line */
+    margin: 0 5px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.indicator-line.active {
+    background-color: #fff; /* Set the color for the active line */
+}
