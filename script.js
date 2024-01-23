@@ -33,3 +33,9 @@ setInterval(() => {
     currentIndex = (currentIndex + 1) % indicatorLines.length; // Use indicatorLines.length for dynamic count
     showBanner(currentIndex);
 }, 5000); // Change the duration as needed
+
+//Nav button for small screens
+function toggleNav() {
+    var nav = document.querySelector('nav');
+    nav.style.display = (nav.style.display === 'flex' || nav.style.display === '') ? 'none' : 'flex';
+}

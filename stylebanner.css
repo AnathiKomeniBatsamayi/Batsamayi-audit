@@ -23,7 +23,7 @@ header {
 }
 
 header.scrolled {
-    background-color: white;
+    background-color: rgb(216, 208, 208);
     color: black;
 }
 
@@ -59,23 +59,54 @@ header.scrolled .text {
 }
 
 .banner {
-    height: 700px; /* Adjust the height as needed */
+    height: 1100px; /* Adjust the height as needed */
     background-size: cover;
     background-position: center;
     color: white;
-    text-align: center;
+    text-align: left;
     padding-top: 100px; /* Adjust the padding as needed */
+    min-width: 100%;
+    box-sizing: border-box;
     
 }
 
-.banner::before {
+.img{
     content: "";
     position: absolute;
      top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    
+    z-index: 1;
+    background-color: rgba(3, 2, 13, 0.934);
+}
+
+/* .banner::before {
+    content: "";
+    position: absolute;
+     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 37, 100, 0.08);
+    z-index: 1;
+} */
+
+
+.textBanner{
+    text-align: left;
+    align-items: center; 
+    padding-left: 400px; 
+    margin-top: 200px;
+    color: #fff;
+    z-index: 1003;
+}
+.textBannerSecondLine{
+    text-align: left;
+    align-items: center; 
+    padding-left: 400px; 
+    color: #fff;
+    z-index: 1003;
 }
 
 
@@ -105,29 +136,19 @@ header.scrolled nav a {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 600px; /* Set the desired height for your banners */
+    height: 1100px; /* Set the desired height for your banners */
     color: rgba(6, 33, 51, 0.2);
+    
 }
-.carousel-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(1, 8, 14, 0.2); /* Set your desired overlay color with transparency */
-}
+
 
 .carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
     height: 100%; /* Ensure the carousel height matches the banners */
 }
 
-.banner {
-    min-width: 100%;
-    box-sizing: border-box;
-}
+
 
   
 .carousel-indicator {
@@ -143,7 +164,7 @@ header.scrolled nav a {
     height: 5px; /* Set the desired height for the line */
     background-color: #888; /* Set the default color for the line */
     margin: 0 5px;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 1s ease-in-out;
     cursor: pointer;
     
 }
@@ -151,3 +172,16 @@ header.scrolled nav a {
 .indicator-line.active {
     background-color: #fff; /* Set the color for the active line */
 }
+/* Responsive Nav */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding-left: 20px; /* Adjust as needed */
+    padding-right: 20px; /* Adjust as needed */
+}
+
+
+
