@@ -30,6 +30,7 @@ header.scrolled {
 .logo-container {
     display: flex;
     align-items: center;
+    padding-left: 300px;
 }
 
 .logo {
@@ -95,15 +96,23 @@ header.scrolled .text {
     z-index: 1003;
 }
 
+.introduction-heading {
+  padding-top: 25px;
+}
 
 .content {
-    padding: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 /* Style your navigation menu as needed */
 nav {
     display: flex;
     background-color: transparent;
+}
+
+.nav-items {
+  padding-right: 300px;
 }
 
 nav a {
@@ -201,43 +210,66 @@ body {
   }
 
 @media screen and (max-width: 1420px) {
-  .services-card-right {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-  .services-card-left {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-  .gradient-overlay-right {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-  .gradient-overlay-left {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
+    .content {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+    .logo-container {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+    .nav-items {
+      padding-right: 200px;
+    }
+    .textBanner {
+      padding-left: 250px;
+    }
+    .textBannerSecondLine {
+      padding-left: 250px;
+    }
+    .footer {
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+    
+  
 }
 
 @media screen and (max-width: 1080px) {
-    .services-card-right {
+    .content {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .logo-container {
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      justify-content: center;
+    }
+    .nav-items {
+      margin: auto;
+      width: fit-content;
+      justify-content: center;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .textBanner {
+      padding-left: 150px;
+    }
+    .textBannerSecondLine {
+      padding-left: 150px;
+    }
+    header {
+      display: inline;
+      
+    }
+    .footer {
       margin-left: 100px;
       margin-right: 100px;
     }
-    .services-card-left {
-      margin-left: 100px;
-      margin-right: 100px;
-    }
-    .gradient-overlay-right {
-      margin-left: 100px;
-      margin-right: 100px;
-    }
-    .gradient-overlay-left {
-      margin-left: 100px;
-      margin-right: 100px;
-    }
-  }
-
+}
 
 
 @media screen and (max-height: 720px) {

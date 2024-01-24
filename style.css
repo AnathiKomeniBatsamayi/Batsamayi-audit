@@ -2,6 +2,13 @@ body {
     font-family: 'Roboto';
 }
 
+.introduction-heading {
+    padding-left: 300px;
+    padding-right: 300px;
+    font-family: 'Roboto';
+    color: #0262C4;
+}
+
 .services-header {
     padding-left: 300px;
     padding-right: 300px;
@@ -93,4 +100,44 @@ a{
 }
 a:hover{
     color: #88afe0;
+}
+
+@media screen and (max-width: 1420px) {
+    .introduction-heading {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .services-card-right {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .services-card-left {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .services-header {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+  
+}
+
+@media screen and (max-width: 1080px) {
+    .introduction-heading {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .services-card-right {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .services-card-left {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .services-header {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
