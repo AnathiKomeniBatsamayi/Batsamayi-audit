@@ -85,3 +85,12 @@ body {
     padding-bottom: 25px;
     font-size: 16px;
 }
+a{
+    text-decoration: none;
+    color: white;
+    vertical-align: bottom;
+    
+}
+a:hover{
+    color: #88afe0;
+}
