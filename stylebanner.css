@@ -208,3 +208,54 @@ a:hover{
     text-align: right;
   }
 
+@media screen and (max-width: 1420px) {
+  .services-card-right {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .services-card-left {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .gradient-overlay-right {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .gradient-overlay-left {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+    .services-card-right {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .services-card-left {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .gradient-overlay-right {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .gradient-overlay-left {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  }
+
+
+
+@media screen and (max-height: 720px) {
+  .carousel-container {
+    height: 480px;
+  }
+}
+
+@media screen and (max-height: 920px) {
+  .carousel-container {
+    height: 920px;
+  }
+}
