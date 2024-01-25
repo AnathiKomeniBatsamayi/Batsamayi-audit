@@ -87,6 +87,7 @@ header.scrolled .text {
     margin-top: 200px;
     color: #fff;
     z-index: 1003;
+    text-shadow: 3px 3px #07070777;
 }
 .textBannerSecondLine{
     text-align: left;

@@ -17,9 +17,9 @@
        
             <div class="logo-container">
                 <img src="img/Newlogo.png" alt="Logo" class="logo">
-                <div class="text-container">
-                    <p class="text">BESPOKE AUDIT</p>
-                    <p class="text bold">BY BATSAMAYI</p>
+                <div class="text-container" style="">
+                    <p class="text" style="height: 17px;">BESPOKE AUDIT</p>
+                    <p class="text bold" style="margin: 1px;">BY BATSAMAYI</p>
                 </div>
             </div>
             <div class="nav-toggle" onclick="toggleNav()">
@@ -29,10 +29,10 @@
             </div>
             <div class="nav-items">
                 <nav >
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
+                    <a href="https://bespokeaudit.co.za/">Home</a>
+                    <a href="#intro">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#Contact">Contact</a>
                 </nav>
             </div>
     </header>
@@ -40,7 +40,7 @@
         <div class="carousel">
             
             <div class="banner"  style="background-image: url('img/banner1.png'); ">
-                <h1 class="textBanner" >Introducing Bespoke Audit</h1>
+                <h1 class="textBanner">Introducing Bespoke Audit</h1>
                     <h2 class="textBannerSecondLine">Endless possibilities...</h2>
                 <!-- Add any other content you want in the banner -->
             </div>
@@ -62,11 +62,11 @@
             </div>
             <div class="banner" style="background-image: url('img/banner5.png');" >
                     <h1 class="textBanner" >Introducing Bespoke Audit</h1>
-                        <h2 class="textBannerSecondLine">Endless possibilities...</h2>
+                        <h2 id="intro" class="textBannerSecondLine">Endless possibilities...</h2>
                     <!-- Add any other content you want in the banner -->
             </div>
         </div>
-        <div class="carousel-indicator">
+        <div  class="carousel-indicator">
             <div class="indicator-line active" onclick="showBanner(0)"></div>
             <div class="indicator-line" onclick="showBanner(1)"></div>
             <div class="indicator-line" onclick="showBanner(2)"></div>
@@ -74,20 +74,20 @@
             <div class="indicator-line" onclick="showBanner(4)"></div>
         </div>
     </div>
-    
-    <h2 class="introduction-heading">
-        Introduction
-    </h2>
+    <div >
+        <h2  class="introduction-heading">
+            Introduction
+        </h2>
 
-    <div class="content" style="">
-        <p>
-            Bespoke Auditing is your solution to tailored IT auditing. We understand the importance of ensuring the security, efficiency, and compliance of your organization's IT infrastructure. Our team of experts is dedicated to delivering customised auditing services designed to meet the needs and challenges of your organization.
-        </p>
-        <!-- Add more content as needed -->
+        <div  class="content" style="">
+            <p id="services">
+                Bespoke Auditing is your solution to tailored IT auditing. We understand the importance of ensuring the security, efficiency, and compliance of your organization's IT infrastructure. Our team of experts is dedicated to delivering customised auditing services designed to meet the needs and challenges of your organization.
+            </p>
+            <!-- Add more content as needed -->
+        </div>
     </div>
-
     <!--Services Section-->
-    <div style="background-color: black;">
+    <div  style="background-color: black;">
         <div class="services-bg-gradient-overlay" style="padding-bottom: 25px;">
             <h2 class="services-header">
                 The Valuable Services We Provide
@@ -138,7 +138,7 @@
     </div>
 
     <!--Footer Section-->
-    <footer style="background-color: #001B3E; height: auto;" >
+    <footer id="Contact" style="background-color: #001B3E; height: auto;" >
         <div class="footer">
             <div class="row">
                 <div class="col span4 " >
@@ -147,7 +147,7 @@
                         <a href="index.html"><li>Home</li></a>
                         <a href="https://bespokecloud.co.za/"><li>Bespoke Cloud</li></a>
                         <a href="https://bespokeaudit.co.za/"><li>Bespoke Audit</li></a>
-                        <a><li>Bespoke QA</li></a>
+                        <a><li>Bespoke Testing</li></a>
                         
                     </ul>
                 </div>
