@@ -327,3 +327,11 @@ body {
     height: 480px;
   }
 }
+@media screen and (max-height: 1080px) {
+  .carousel-container{
+    height: 430px;
+  }
+  .banner{
+    height: 430px;
+  }
+}
