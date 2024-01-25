@@ -60,7 +60,7 @@ header.scrolled .text {
 }
 
 .banner {
-    height: 850px; /* Adjust the height as needed */
+    height: 720px; /* Adjust the height as needed */
     background-size: cover;
     background-position: center;
     color: white;
@@ -132,7 +132,7 @@ header.scrolled nav a {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 850px; /* Set the desired height for your banners */
+    height: 720px; /* Set the desired height for your banners */
     color: rgba(6, 33, 51, 0.2);
     
 }
@@ -319,15 +319,11 @@ body {
     
 }
 
-
-@media screen and (max-height: 720px) {
-  .carousel-container {
+@media screen and (max-height: 680px) {
+  .carousel-container{
     height: 480px;
   }
-}
-
-@media screen and (max-height: 920px) {
-  .carousel-container {
-    height: 920px;
+  .banner{
+    height: 480px;
   }
 }
