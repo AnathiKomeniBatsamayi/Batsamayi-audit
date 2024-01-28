@@ -161,4 +161,16 @@ a:hover{
     }
 }
 
-  
+.services-card-left,
+.services-card-right {
+    /* ... existing styles ... */
+    transition: transform 0.3s ease-in-out;
+}
+
+.services-card-left:hover,
+.services-card-right:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
