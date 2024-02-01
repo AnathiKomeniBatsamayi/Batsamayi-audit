@@ -1,0 +1,396 @@
+
+.container {
+    
+    
+    padding-left: 300px;
+    padding-right: 300px;
+    
+  }
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header.scrolled {
+    background-color: rgb(216, 208, 208);
+    color: black;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 300px;
+}
+
+.logo {
+    max-height: 50px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add margin for separation */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+    transition: color 0.3s; /* Smooth transition for the text color property */
+}
+
+header.scrolled .text {
+    color: black; /* Change the text color when scrolling */
+}
+
+.text.bold {
+    font-weight: bolder;
+    font-size: small;
+}
+
+.banner {
+    height: 720px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    padding-top: 100px; /* Adjust the padding as needed */
+    min-width: 100%;
+}
+
+.img{
+    content: "";
+    position: absolute;
+     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(3, 2, 13, 0.934);
+}
+
+.textBanner{
+    text-align: left;
+    align-items: center; 
+    padding-left: 400px; 
+    margin-top: 100px;
+    color: #fff;
+    z-index: 1003;
+    text-shadow: 3px 3px #07070777;
+}
+.textBannerSecondLine{
+    text-align: left;
+    align-items: center; 
+    padding-left: 400px; 
+    color: #fff;
+    z-index: 1003;
+}
+
+.introduction-heading {
+  padding-top: 25px;
+}
+
+.content {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+/* Style your navigation menu as needed */
+nav {
+    display: flex;
+    background-color: transparent;
+}
+
+.nav-items {
+  padding-right: 300px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth transition for the text color property */
+}
+nav a :hover{
+  color: #88afe0;
+}
+
+header.scrolled nav a {
+    color: black; /* Change the navigation text color when scrolling */
+}
+  /* Add your carousel styles here */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 720px; /* Set the desired height for your banners */
+    color: rgba(6, 33, 51, 0.2);
+    
+}
+
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 100%; /* Ensure the carousel height matches the banners */
+}
+
+
+
+  
+.carousel-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicator-line {
+    width: 80px; /* Set the desired width for the line */
+    height: 5px; /* Set the desired height for the line */
+    background-color: #888; /* Set the default color for the line */
+    margin: 0 5px;
+    transition: background-color 1s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.indicator-line.active {
+    background-color: #fff; /* Set the color for the active line */
+}
+/* Responsive Nav */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding-left: 20px; /* Adjust as needed */
+    padding-right: 20px; /* Adjust as needed */
+}
+
+
+
+.icon-square {
+    background-color: #444;
+}
+.icon-square{
+    margin: 2px 2px 2px 0;
+    display: inline-block !important;
+    text-align: center !important;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+	padding:3px;
+    line-height: 18px;
+    text-shadow:none;
+    cursor: pointer;
+    
+}
+
+.text-center {
+    text-align: center;
+    margin-left: 200px ;
+  }
+  .text-right {
+    text-align: justify;
+    margin-left: 200px ;
+  }
+
+@media screen and (max-width: 1420px) {
+    .content {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+    .logo-container {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+    .nav-items {
+      padding-right: 200px;
+    }
+    .textBanner {
+      padding-left: 250px;
+    }
+    .textBannerSecondLine {
+      padding-left: 250px;
+    }
+    
+    
+  
+}
+
+@media screen and (max-width: 1080px) {
+    .content {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .logo-container {
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      justify-content: center;
+    }
+    .nav-items {
+      margin: auto;
+      width: fit-content;
+      justify-content: center;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .textBanner {
+      padding-left: 150px;
+    }
+    .textBannerSecondLine {
+      padding-left: 150px;
+    }
+    header {
+      display: inline;
+      
+    }
+   
+
+    .col{
+      margin-left: 0px;
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .logo-container {
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      justify-content: center;
+    }
+    .nav-items {
+      margin: auto;
+      width: fit-content;
+      justify-content: center;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .textBanner {
+      padding-left: 30px;
+    }
+    .textBannerSecondLine {
+      padding-left: 30px;
+    }
+    header {
+      display: inline;
+      
+    }
+    
+    
+    
+}
+
+
+@media screen and (max-height: 680px) {
+  .carousel-container{
+    height: 430px;
+  }
+  .banner{
+    height: 430px;
+  }
+}
+@media screen and (max-height: 1080px) {
+  .carousel-container{
+    height: 430px;
+  }
+  .banner{
+    height: 430px;
+  }
+}
+footer {
+  background: linear-gradient(135deg, #1f1f1f, #202020);
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start; /* Align items to the start of the flex container */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.footer-content {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.05);
+}
+
+.page-links {
+  list-style: none;
+  padding: 0;
+}
+
+.page-links li {
+  margin-bottom: 10px;
+}
+
+.page-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+
+
+.company-address {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.section-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.copyright-container {
+  width: 100%; /* Take full width */
+  text-align: center; /* Center the text */
+  margin-top: 80px;
+}
+
+.copyright-text {
+  font-size: 12px;
+  color: #888;
+}
+:target::before {
+  content: "";
+  display: block;
+  height: 20px;
+  margin-top: -20px;
+  visibility: hidden;
+}
