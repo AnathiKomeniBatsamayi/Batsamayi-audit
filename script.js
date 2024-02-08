@@ -48,3 +48,42 @@ function toggleNav() {
     var nav = document.querySelector('nav');
     nav.style.display = (nav.style.display === 'flex' || nav.style.display === '') ? 'none' : 'flex';
 }
+
+// Function to scroll to a specific section when a navigation link is clicked
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Function to scroll to a specific section when a navigation link is clicked
+function scrollToSectionOffset(sectionId) {
+    const section = document.getElementById(sectionId);
+    const offset = -80; // Adjust this value to set the offset
+
+    // Calculate the target scroll position with the offset
+    const targetScrollPosition = section.getBoundingClientRect().top + window.pageYOffset + offset;
+
+    // Scroll to the calculated position with smooth behavior
+    window.scrollTo({ top: targetScrollPosition, behavior: 'smooth' });
+}
+
+// Add event listeners for each navigation link
+document.getElementById('home-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToSection('bannertop');
+});
+
+document.getElementById('about-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToSectionOffset('intro');
+});
+
+document.getElementById('services-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToSectionOffset('services');
+});
+
+document.getElementById('contact-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToSection('Contact');
+});
