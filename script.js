@@ -28,6 +28,15 @@ function showBanner(index) {
     indicatorLines[index].classList.add('active');
 }
 
+// Function to handle window resize event
+function handleResize() {
+    // Recalculate and show the current banner when window is resized
+    showBanner(currentIndex);
+}
+
+// Add event listener for window resize event
+window.addEventListener('resize', handleResize);
+
 // Automatically advance the carousel every few seconds
 setInterval(() => {
     currentIndex = (currentIndex + 1) % indicatorLines.length; // Use indicatorLines.length for dynamic count
