@@ -18,8 +18,8 @@ body {
 }
 
 .services-bg-gradient-overlay {
-    background: rgb(116,125,135);
-    background: linear-gradient(0deg, rgba(116,125,135,20%) 0%, rgba(116,125,135,1) 100%);
+    background: rgb(86, 93, 100);
+    background: linear-gradient(0deg, rgba(77, 83, 91, 0.2) 0%, rgba(116,125,135,1) 70%);
 }
 
 .services-card-left {
