@@ -33,7 +33,12 @@ function handleResize() {
     // Recalculate and show the current banner when window is resized
     showBanner(currentIndex);
 }
-
+function submitForm() {
+    // Simulating form submission (you can replace this with your backend logic)
+    // For demonstration purposes, we're just showing a success message
+    document.getElementById('form-container').style.display = 'none';
+    document.getElementById('success-message').style.display = 'block';
+  }
 // Add event listener for window resize event
 window.addEventListener('resize', handleResize);
 
