@@ -14,13 +14,21 @@ body {
     padding-right: 300px;
     padding-top: 25px;
     font-family: 'Roboto';
-    color: white; 
+    color: white;
 }
 
-.services-bg-gradient-overlay {
+/* .services-bg-gradient-overlay {
+    background: rgb(49, 55, 60);
+} */
+/* .services-bg-gradient-overlay {
     background: rgb(86, 93, 100);
     background: linear-gradient(0deg, rgba(77, 83, 91, 0.2) 0%, rgba(116,125,135,1) 70%);
+} */
+.services-bg-gradient-overlay {
+   background-color: grey transparent;
+
 }
+
 
 .services-card-left {
     align-items: center;
@@ -96,7 +104,7 @@ a{
     text-decoration: none;
     color: white;
     vertical-align: bottom;
-    
+
 }
 a:hover{
     color: #88afe0;
@@ -122,10 +130,6 @@ a:hover{
         padding-left: 200px;
         padding-right: 200px;
     }
-    .container{
-        padding-left: 200px;
-        padding-right: 200px ;
-    }
 }
 
 @media screen and (max-width: 1080px) {
@@ -145,10 +149,7 @@ a:hover{
         padding-left: 100px;
         padding-right: 100px;
     }
-    .container{
-        padding-left: 100px;
-        padding-right: 100px ;
-    }
+
 }
 
 @media screen and (max-width: 680px) {
@@ -168,10 +169,6 @@ a:hover{
         padding-left: 20px;
         padding-right: 20px;
     }
-    .container{
-        padding-left: 5px;
-        padding-right: 5px ;
-    }
 }
 
 .services-card-left,
@@ -186,4 +183,141 @@ a:hover{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+.contact-form {
+    padding: 150px; /* Adjust padding for smaller screens */
+    background-color: rgb(37, 36, 36);
+    background-image: url(testBackG.png); 
+    height: 759px;
+}
+
+.container {
+    background-color: #292a2b;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #1f1f1f, #202020);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    padding: 20px; /* Adjust padding for smaller screens */
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+
+}
+
+.col-lg-8 {
+    padding: 0px;
+}
+
+.col-lg-8 > div {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px; /* Add margin between form elements */
+
+}
+
+.col-lg-4 {
+    padding: 20px;
+    position: relative;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    justify-content: space-around;
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Make inputs and textarea full width */
+    margin-bottom: 10px; /* Add margin between inputs */
+    background-color: rgb(216, 208, 208);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+textarea {
+    height: 150px; /* Set height for textarea */
+    resize: none;
+}
+
+button[type="button"] {
+    border-radius: 10px;
+    border: none;
+    background-color: #2f5b82;
+    color: white;
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+}
+@media screen and (max-width: 1080px) {
+    .contact-form {
+        padding: 20px;
+        padding-top: 200px;
+    }
+    .contact-form {
+        padding-top: 200px;
+        height: 679px;
+    }
+    .container{
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .contact-form {
+        padding: 20px;
+        padding-top: 200px;
+    }
+    .contact-form {
+        padding-top: 200px;
+        height: 1000px;
+    }
+    .container{
+        padding: 0px;
+    }
+}
+/* Adjustments for smaller screen sizes */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+        padding-top: 200px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .col-lg-8 > div {
+        margin-bottom: 10px;
+    }
+    input[type="text"],
+    textarea {
+        padding: 8px;
+    }
+    button[type="button"] {
+        padding: 8px 16px;
+    }
+    .contact-form {
+        padding-top: 200px;
+        height: 1000px;
+    }
+    .container{
+        padding: 0px;
+    }
+}
+
+/* Adjustments for even smaller screen sizes */
+@media screen and (max-width: 576px) {
+    input[type="text"],
+    textarea {
+        padding: 6px;
+    }
+    button[type="button"] {
+        padding: 6px 12px;
+    }
+    .contact-form {
+        padding-top: 200px;
+        height: 1000px;
+    }
+    .container{
+        padding: 0px;
+    }
+
+}
 
