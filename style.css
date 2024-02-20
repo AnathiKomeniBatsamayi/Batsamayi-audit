@@ -227,6 +227,7 @@ a:hover{
 }
 
 input[type="text"],
+input[type="email"],
 textarea {
     width: 100%; /* Make inputs and textarea full width */
     margin-bottom: 10px; /* Add margin between inputs */

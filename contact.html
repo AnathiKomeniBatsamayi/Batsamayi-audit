@@ -18,7 +18,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="icon/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init({
+            publicKey: 'iB2lnwiQv0y7s4RgZ',
+          });
+        })();
+</script>
   </head>
 <body >
     <!--Nav Bar-->
@@ -48,17 +56,22 @@
           <div class="row">
             
                 <div class="col-lg-8" style="padding: 0px;">
+                  
                     <div >
                         <h1 style="color: #2f5b82;">Contact Us</h1>
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Email" >
-                        <input type="text" placeholder="Subject">
-                        <textarea placeholder="Message" ></textarea>
+                        <input type="text" id="name" placeholder="Name" >
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="text" id="subject" placeholder="Subject">
+                        <textarea id="message" placeholder="Message" rows="5" required></textarea>
                         <div style="display: flex;padding-right: 5px;">
 
-                            <button type="button" style="border-radius: 10px; border: none; background-color: #2f5b82; color: white; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px;" onclick="submitForm()">Send</button>
-                        </div>
-                    </div>  
+                            <button type="submit" style="border-radius: 10px; border: none; background-color: #2f5b82; color: white; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px;" onclick="submitForm()">Send</button>
+                        
+                          </div>
+                          
+                     </div>  
+                                       
+                  
                 </div>
                 <div class="col-lg-4" >
                  
@@ -130,8 +143,7 @@
 
   
 </footer>
-<script src="script.js">
-        
+<script src="email.js">
 </script>
 <script src="Particles.js">
 </script>
