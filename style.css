@@ -315,9 +315,11 @@ button[type="button"] {
     .contact-form {
         padding-top: 200px;
         height: 1000px;
+        
     }
     .container{
         padding: 0px;
+       
     }
 
 }

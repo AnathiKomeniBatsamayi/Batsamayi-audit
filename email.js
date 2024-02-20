@@ -17,30 +17,36 @@ function submitForm() {
             alert('Please enter a valid email address.');
             return;
         }
-else{
-    emailjs.send("service_m9gm10a", "template_mk2ocjb", {
-        from_name: name,
-        email_id: email,
-        subject: subject,
-        message: message
-    }).then(function(response) {
-        
-        alert("Success!")
-        console.log("Email sent successfully", response);
-        document.getElementById('success-message').style.display = 'block';
-        
-    }, function(error) {
-        // Handle error
-        console.error("Email sending failed", error);
-        
-document.getElementById('form-container').style.display = 'none';
-    });
-}
-    
+    else{
+        emailjs.send("service_m9gm10a", "template_mk2ocjb", {
+            from_name: name,
+            email_id: email,
+            subject: subject,
+            message: message
 
-    name.value='';
-    email.value='';
-    subject.value='';
-    message.value='';
+        }).then(function(response) {
+            
+            alert("Success!")
+            
+            Clearform();
+            
+        }, function(error) {
+            // Handle error
+        
+        });
+
+        
+    
+}
+function Clearform(){
+    document.getElementById('message').value='';
+    document.getElementById('subject').value='';
+    document.getElementById('email').value='';
+    document.getElementById('name').value='';
+    name=document.getElementById('message').value;
+    console.log(name);
+}
+
+    
 
 }
