@@ -6,7 +6,18 @@ function submitForm() {
     var message = document.getElementById('message').value;
 
 
-    
+    if(name==='' || email==='' || subject ==='' || message==='')
+    {
+        alert('Please fill in all fields.');
+            return;
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+    else{
         emailjs.send("service_m9gm10a", "template_mk2ocjb", {
             from_name: name,
             email_id: email,
@@ -26,7 +37,7 @@ function submitForm() {
 
         
     
-    
+}
 function Clearform(){
     document.getElementById('message').value='';
     document.getElementById('subject').value='';

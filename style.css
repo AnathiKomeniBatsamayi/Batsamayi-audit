@@ -249,6 +249,11 @@ button[type="button"] {
     color: white;
     padding: 10px 20px; /* Adjust padding for smaller screens */
 }
+.success-message {
+    color: green;
+    text-align: center;
+    display: none;
+  }
 @media screen and (max-width: 1080px) {
     .contact-form {
         padding: 20px;
