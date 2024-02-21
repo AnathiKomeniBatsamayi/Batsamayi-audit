@@ -187,7 +187,10 @@ a:hover{
     padding: 150px; /* Adjust padding for smaller screens */
     background-color: rgb(37, 36, 36);
     background-image: url(testBackG.png); 
-    height: 759px;
+    height: 813px;
+    width: 100%;
+    margin-bottom: 0px;
+    
 }
 
 .container {
@@ -197,11 +200,10 @@ a:hover{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
-    padding: 20px; /* Adjust padding for smaller screens */
     height: 100%;
     width: 100%;
     padding: 0px;
-
+    margin-bottom: 20px;
 }
 
 .col-lg-8 {
@@ -261,7 +263,7 @@ button[type="button"] {
     }
     .contact-form {
         padding-top: 200px;
-        height: 679px;
+        height: 729px;
     }
     .container{
         padding: 0px;

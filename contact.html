@@ -27,6 +27,7 @@
           });
         })();
 </script>
+
   </head>
 <body >
     <!--Nav Bar-->
@@ -49,7 +50,7 @@
             </div>
     </header>
 
-    <div class="contact-form" >
+    <div id="contactForm" class="contact-form" >
       <div class="particles"></div>
         <div class="container" >
          
@@ -57,12 +58,19 @@
             
                 <div class="col-lg-8" style="padding: 0px;">
                   
+                
                     <div >
                         <h1 style="color: #2f5b82;">Contact Us</h1>
-                        <input type="text" id="name" placeholder="Name" >
-                        <input type="email" id="email" placeholder="Email" required>
-                        <input type="text" id="subject" placeholder="Subject">
-                        <textarea id="message" placeholder="Message" rows="5" required></textarea>
+                        
+                        <input type="text" id="name" name="name"  placeholder="Name" required>
+                        <p style="color: red; display: none;" id="nameVal">*Name is Required</p>
+                        <input type="email" id="email"  name="email" placeholder="Email" required>
+                        <p style="color: red; display: none;" id="emailVal">*Email is Required</p>
+                        <input type="text" id="company" name="company" placeholder="Company Name (Optional)" >
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <p style="color: red; display: none;" id="subjectVal">*Subject is Required</p>
+                        <textarea id="message" placeholder="Message" name="message" rows="5" required></textarea>
+                        <p style="color: red; display: none; margin-top: 0;padding-top: 0;" id="messageVal">*Message is Required</p>
                         <div style="display: flex;padding-right: 5px;">
 
                             <button type="submit" style="border-radius: 10px; border: none; background-color: #2f5b82; color: white; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px;" onclick="submitForm()">Send</button>
@@ -70,7 +78,7 @@
                           </div>
                           
                      </div>  
-                                       
+                             
                   
                 </div>
                 <div class="col-lg-4" >
@@ -143,6 +151,7 @@
 
   
 </footer>
+
 <script src="email.js">
 </script>
 <script src="Particles.js">
