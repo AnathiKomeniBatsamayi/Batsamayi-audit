@@ -181,6 +181,7 @@ function Clearform(){
     document.getElementById('subject').value='';
     document.getElementById('email').value='';
     document.getElementById('name').value='';
+    document.getElementById('company').value='';
    
 }
 
