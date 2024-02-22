@@ -169,8 +169,7 @@ function submitForm() {
 
         }).then(function(response) {
             console.log("submited")
-            alert("Email Sent Successfully! Thank you for contacting us, We will be in contact shortly")
-            
+            customAlert()
             Clearform();
             
         }, function(error) {
@@ -190,8 +189,22 @@ function Clearform(){
    
 }
 
+var alertBox = null;
 
+function customAlert(message) {
+    if(alertBox) {
+        alertBox.querySelector('p').textContent = message;
+    } else {
+        alertBox = document.createElement('div');
+        alertBox.setAttribute('class', 'custom-alert');
+        alertBox.innerHTML = '<p>Email Sent Successfully! Thank you for contacting us, we will be in contact shortly.</p><button onclick="closeAlert()">OK</button>';
+        document.body.appendChild(alertBox);
+    }
+}
 
-
-    
-
+function closeAlert() {
+    if(alertBox) {
+        alertBox.parentNode.removeChild(alertBox);
+        alertBox = null;
+    }
+}
