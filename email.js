@@ -10,13 +10,16 @@
 
     var message = document.getElementById('message');
     var messageVal = document.getElementById('messageVal');
+
+    var company = document.getElementById('company');
     
 
     namme.addEventListener('input', function(event){
         console.log(event.target.value)
         if(event.target.value===''){
+            
             namme.style.border = "1px solid red";
-            nammeVal.style.display="block";
+            nameVal.style.display="block";
             namme.style.marginBottom="0px"
             
             return
@@ -45,7 +48,7 @@
         else if(!emailRegex.test(event.target.value)){
             
             emailVal.style.display = "block";
-            emailVal.innerText = "*Enter a Valid email";
+            emailVal.innerText = "* Please Enter a Valid email";
             return
         }
         else{
