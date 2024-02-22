@@ -189,22 +189,19 @@ function Clearform(){
    
 }
 
-var alertBox = null;
-
 function customAlert(message) {
-    if(alertBox) {
-        alertBox.querySelector('p').textContent = message;
-    } else {
-        alertBox = document.createElement('div');
-        alertBox.setAttribute('class', 'custom-alert');
-        alertBox.innerHTML = '<p>Email Sent Successfully! Thank you for contacting us, we will be in contact shortly.</p><button onclick="closeAlert()">OK</button>';
-        document.body.appendChild(alertBox);
-    }
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = 'block';
+
+    var alertBox = document.getElementById('customAlert');
+    alertBox.style.display = 'block';
 }
 
 function closeAlert() {
-    if(alertBox) {
-        alertBox.parentNode.removeChild(alertBox);
-        alertBox = null;
-    }
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
+
+    var alertBox = document.getElementById('customAlert');
+    alertBox.style.display = 'none';
 }
+
