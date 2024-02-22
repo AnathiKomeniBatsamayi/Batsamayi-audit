@@ -12,6 +12,8 @@
     var messageVal = document.getElementById('messageVal');
 
     var company = document.getElementById('company');
+
+    var container = document.getElementById('contactForm');
     
 
     namme.addEventListener('input', function(event){
@@ -21,7 +23,7 @@
             namme.style.border = "1px solid red";
             nameVal.style.display="block";
             namme.style.marginBottom="0px"
-            
+            container.style.height="100%";
             return
         }
         else{
@@ -42,13 +44,14 @@
             email.style.border = "1px solid red";
             emailVal.style.display="block";
             email.style.marginBottom="0px"
-            
+            container.style.height="100%";
             return
         }
         else if(!emailRegex.test(event.target.value)){
             
             emailVal.style.display = "block";
             emailVal.innerText = "* Please Enter a Valid email";
+            container.style.height="100%";
             return
         }
         else{
@@ -67,7 +70,7 @@
             subject.style.border = "1px solid red";
             subjectVal.style.display="block";
             subject.style.marginBottom="0px"
-            
+            container.style.height="100%";
             return
         }
         else{
@@ -85,7 +88,7 @@
             message.style.border = "1px solid red";
             messageVal.style.display="block";
             message.style.marginBottom="0px"
-            
+            container.style.height="100%";
             return
         }
         else{
@@ -108,25 +111,27 @@ function submitForm() {
         namme.style.border = "1px solid red";
         nameVal.style.display="block";
         namme.style.marginBottom="0px"
-        
+        container.style.height="100%";
         return
     }
     if(email.value===""){
         email.style.border = "1px solid red";
         emailVal.style.display="block";
         email.style.marginBottom="0px"
-
+        container.style.height="100%";
         return
     }if(subject.value===""){
         subject.style.border = "1px solid red";
         subjectVal.style.display="block";
         subject.style.marginBottom="0px"
+        container.style.height="100%";
         return
     }
     if(message.value===""){
         message.style.border = "1px solid red";
         messageVal.style.display="block";
         message.style.marginBottom="0px"
+        container.style.height="100%";
         return
     }
 
