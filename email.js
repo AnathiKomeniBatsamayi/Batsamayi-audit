@@ -161,7 +161,7 @@ function submitForm() {
 
         }).then(function(response) {
             console.log("submited")
-            alert("Success!")
+            alert("Email Sent Successfully! Thank you for contacting us, We will be in contact shortly")
             
             Clearform();
             
