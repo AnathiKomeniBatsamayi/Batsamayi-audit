@@ -103,6 +103,53 @@
     function submitToAPI(e) {
         e.preventDefault();
       
+        if(namme.value===""){
+            namme.style.border = "1px solid red";
+            nameValid.style.display="block";
+            namme.style.marginBottom="0px"
+            container.style.height="100%";
+            return
+        }
+        if(emmail.value===""){
+            emmail.style.border = "1px solid red";
+            emailValid.style.display="block";
+            emmail.style.marginBottom="0px"
+            container.style.height="100%";
+            return
+        }if(subbject.value===""){
+            subbject.style.border = "1px solid red";
+            subjectValid.style.display="block";
+            subbject.style.marginBottom="0px"
+            container.style.height="100%";
+            return
+        }
+        if(messsage.value===""){
+            messsage.style.border = "1px solid red";
+            messageValid.style.display="block";
+            messsage.style.marginBottom="0px"
+            container.style.height="100%";
+            return
+        }
+    
+        if (!namme.checkValidity()) {
+            
+            console.log(email)
+            namme.reportValidity();
+            return;
+        }
+        if (!emmail.checkValidity()) {
+            emmail.reportValidity();
+            return;
+        }
+        if (!subbject.checkValidity()) {
+            subbject.reportValidity();
+            return;
+        }
+        if (!messsage.checkValidity()) {
+            messsage.reportValidity();
+            return;
+        }
+
         var name = /[A-Za-z]{1}[A-Za-z]/;
         var email = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
         var subject = /[0-9]{10}/;

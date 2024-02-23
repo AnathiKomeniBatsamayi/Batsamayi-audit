@@ -187,7 +187,7 @@ a:hover{
     padding: 150px; /* Adjust padding for smaller screens */
     background-color: rgb(37, 36, 36);
     background-image: url(testBackG.png); 
-    height: 813px;
+    height: 100%;
     width: 100%;
     margin-bottom: 0px;
     
