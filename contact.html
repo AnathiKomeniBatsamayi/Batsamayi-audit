@@ -27,6 +27,7 @@
           });
         })();
 </script>
+<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   </head>
 <body >
@@ -50,7 +51,8 @@
             </div>
     </header>
     <div id="customAlert" class="custom-alert" style="display: none;">
-      <p>Email Sent Successfully! Thank you for contacting us, we will be in contact shortly.</p>
+      <p>Email Sent Successfully! 
+        <br>Thank you for contacting us, we will be in contact shortly.</p>
       <button onclick="closeAlert()">OK</button>
   </div>
   <div id="overlay" class="overlay"></div>
@@ -77,7 +79,7 @@
                         <p style="color: red; display: none; margin-top: 0;padding-top: 0;" id="messageVal">*Message is Required</p>
                         <div style="display: flex;padding-right: 5px;">
 
-                            <button type="submit" style="border-radius: 10px; border: none; background-color: #2f5b82; color: white; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px;" onclick="submitForm()">Send</button>
+                            <button type="submit" style="border-radius: 10px; border: none; background-color: #2f5b82; color: white; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px;" onclick="submitToAPI(event)">Send</button>
                         
                           </div>
                           
@@ -160,5 +162,6 @@
 </script>
 <script src="Particles.js">
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
