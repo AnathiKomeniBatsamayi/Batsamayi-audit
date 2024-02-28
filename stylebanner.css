@@ -241,6 +241,13 @@ body {
   .banner{
     height: 600px;
   }
+  .textBanner{
+    margin-top: 200px;
+    padding-left: 300px;
+  }
+  .textBannerSecondLine{
+    padding-left: 300px;
+  }
 }
 @media screen and (max-width: 1080px) {
     .content {
@@ -272,7 +279,13 @@ body {
       display: inline;
       
     }
-   
+    .textBanner{
+      margin-top: 200px;
+      padding-left: 300px;
+    }
+    .textBannerSecondLine{
+      padding-left: 300px;
+    }
 
     .col{
       margin-left: 0px;
@@ -309,6 +322,7 @@ body {
     }
     .textBanner {
       padding-left: 30px;
+      margin-top: 200px;
     }
     .textBannerSecondLine {
       padding-left: 30px;
@@ -317,7 +331,12 @@ body {
       display: inline;
       
     }
-    
+    .carousel-container{
+      height: 800px;
+    }
+    .banner{
+      height: 800px;
+    }
     
     
 }
