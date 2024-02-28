@@ -57,7 +57,7 @@ header.scrolled .text {
 }
 
 .banner {
-    height: 720px; /* Adjust the height as needed */
+   
     background-size: cover;
     background-position: center;
     color: white;
@@ -81,7 +81,7 @@ header.scrolled .text {
     text-align: left;
     align-items: center; 
     padding-left: 400px; 
-    margin-top: 100px;
+    margin-top: 400px;
     color: #fff;
     z-index: 1003;
     text-shadow: 3px 3px #07070777;
@@ -132,7 +132,7 @@ header.scrolled nav a {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 720px; /* Set the desired height for your banners */
+  
     color: rgba(6, 33, 51, 0.2);
     
 }
@@ -207,7 +207,7 @@ body {
     margin-left: 200px ;
   }
 
-@media screen and (max-width: 1420px) {
+@media screen and (min-width: 1351px) {
     .content {
       padding-left: 200px;
       padding-right: 200px;
@@ -225,11 +225,23 @@ body {
     .textBannerSecondLine {
       padding-left: 250px;
     }
-    
+    .carousel-container{
+      height: 960px;
+    }
+    .banner{
+      height: 960px;
+    }
     
   
 }
-
+@media screen and (max-width: 1350px) {
+  .carousel-container{
+    height: 600px;
+  }
+  .banner{
+    height: 600px;
+  }
+}
 @media screen and (max-width: 1080px) {
     .content {
       padding-left: 100px;
@@ -266,6 +278,13 @@ body {
       margin-left: 0px;
       width: 100%;
     }
+    .carousel-container{
+      height: 600px;
+    }
+    .banner{
+      height: 600px;
+    }
+    
 }
 
 @media screen and (max-width: 680px) {
@@ -304,22 +323,8 @@ body {
 }
 
 
-@media screen and (max-height: 680px) {
-  .carousel-container{
-    height: 430px;
-  }
-  .banner{
-    height: 430px;
-  }
-}
-@media screen and (max-height: 1080px) {
-  .carousel-container{
-    height: 430px;
-  }
-  .banner{
-    height: 430px;
-  }
-}
+
+
 footer {
   background: linear-gradient(135deg, #1f1f1f, #202020);
   padding: 40px 20px;
