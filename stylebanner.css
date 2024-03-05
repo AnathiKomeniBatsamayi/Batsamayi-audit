@@ -27,7 +27,7 @@ header.scrolled {
 .logo-container {
     display: flex;
     align-items: center;
-    padding-left: 300px;
+    margin-left: 200px;
 }
 
 .logo {
@@ -107,7 +107,7 @@ nav {
 }
 
 .nav-items {
-  padding-right: 300px;
+  padding-right: 200px;
 }
 
 nav a {
@@ -203,12 +203,12 @@ body {
     text-align: justify;
     margin-left: 200px ;
   }
-
+  
 @media screen and (min-width: 1351px) {
     
     .logo-container {
-      padding-left: 250px;
-      padding-right: 250px;
+      margin-left: 200px;
+      margin-right: 200px;
     }
     .nav-items {
       padding-right: 250px;
@@ -246,10 +246,7 @@ body {
   
 }
 @media screen and (max-width: 1080px) {
-    .content {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
+    
     .logo-container {
       width: 100%;
       padding-left: 0px;
@@ -297,10 +294,7 @@ body {
 }
 
 @media screen and (max-width: 680px) {
-    .content {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+   
     .logo-container {
       width: 100%;
       padding-left: 0px;

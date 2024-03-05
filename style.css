@@ -110,8 +110,8 @@ a:hover{
     color: #88afe0;
 }
 .content {
-    padding-left: 300px;
-    padding-right: 300px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 
@@ -156,7 +156,10 @@ a:hover{
         padding-left: 100px;
         padding-right: 100px;
     }
-
+    .content {
+        margin-left: 100px;
+        margin-right: 100px;
+      }
 }
 
 @media screen and (max-width: 680px) {
@@ -176,6 +179,10 @@ a:hover{
         padding-left: 20px;
         padding-right: 20px;
     }
+    .content {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
 }
 
 .services-card-left,
