@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
     <link rel="manifest" href="icon/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+   
 </head>
 <body>
     <header>   
@@ -47,18 +47,22 @@
              
              <div class="banner"  style="background-image: url('img/banner2.png');">
                 <h1 class="textBanner" >Ensuring Digital Integrity, One Audit at a Time.</h1>
+                <h2  class="textBannerSecondLine">Because "Eh, It'll Do" Isn't an Option</h2>
                 
             </div>
             <div class="banner" style="background-image: url('img/banner3.png')" >
                     <h1 class="textBanner" >Ensuring IT Security and Compliance</h1>
+                    <h2  class="textBannerSecondLine">Cyber Sheriffs On Duty...</h2>
                     
             </div>
             <div class="banner" style="background-image: url('img/banner4.png'); ">
                     <h1 class="textBanner" >Your Path to IT Assurance</h1>
+                    <h2  class="textBannerSecondLine">Making IT Less "Oh No" and More "Oh Yeah"</h2>
                     
             </div>
             <div class="banner" style="background-image: url('img/banner5.png');" >
                     <h1 class="textBanner" >A Precision Ballet for Robust Solutions</h1>
+                    <h2  class="textBannerSecondLine">Because "Close Enough" Isn't Good Enough</h2>
                     
             </div>
    
@@ -74,12 +78,12 @@
             <div class="indicator-line" onclick="showBanner(4)"></div>
         </div>
     </div>
-    <div id="intro" style="padding-bottom: 25px;padding-top: 60px;">
-        <h2  class="introduction-heading introSection">
+    <div id="intro" style="padding-bottom: 25px;padding-top: 60px; ">
+        <h2  class="introduction-heading introSection" >
             Introduction
         </h2>
 
-        <div  class="content" class="introSection">
+        <div  class="content" class="introSection" >
             <p >
                 Bespoke Auditing is your trusted audit and advisory service provider, 
                 In today's rapidly evolving technological landscape,
@@ -197,7 +201,12 @@
     
         
       </footer>
-      
+      <script>
+        // Remove .html extension if present
+        if (window.location.href.endsWith(".html")) {
+            window.location.href = window.location.href.slice(0, -5);
+        }
+    </script>
     <script src="script.js">
         
     </script>
