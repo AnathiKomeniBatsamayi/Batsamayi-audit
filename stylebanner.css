@@ -240,9 +240,11 @@ body {
   .textBanner{
     margin-top: 150px;
     padding-left: 300px;
+    font-size: 30pt;
   }
   .textBannerSecondLine{
     padding-left: 300px;
+    font-size: 20pt;
   }
   
   
@@ -256,6 +258,7 @@ body {
       padding-bottom: 20px;
       padding-top: 20px;
       justify-content: center;
+      margin-left: 0px;
     }
     .nav-items {
       margin: auto;
@@ -266,22 +269,17 @@ body {
     }
     .textBanner {
       padding-left: 150px;
+      font-size: 25pt;
     }
     .textBannerSecondLine {
       padding-left: 150px;
+      font-size: 15pt;
     }
     header {
       display: inline;
       
     }
-    .textBanner{
-      margin-top: 150px;
-      padding-left: 300px;
-    }
-    .textBannerSecondLine{
-      padding-left: 300px;
-    }
-
+   
     .col{
       margin-left: 0px;
       width: 100%;
@@ -314,13 +312,16 @@ body {
     }
     .textBanner {
       padding-left: 30px;
-      margin-top:  150px;;
+      margin-top:  150px;
+      font-size: 20pt;
     }
     .textBannerSecondLine {
       padding-left: 30px;
+      font-size: 15pt;
     }
     header {
       display: inline;
+      padding-left: 0px;
       
     }
     .carousel-container{
