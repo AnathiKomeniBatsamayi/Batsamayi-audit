@@ -17,6 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1001;
+    height: 80px;
 }
 
 header.scrolled {
