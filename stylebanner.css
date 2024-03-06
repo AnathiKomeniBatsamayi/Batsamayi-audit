@@ -278,6 +278,7 @@ body {
     }
     header {
       display: inline;
+      height: 166px;
       
     }
    
@@ -323,7 +324,7 @@ body {
     header {
       display: inline;
       padding-left: 0px;
-      
+      height: 166px;
     }
     .carousel-container{
       height: 800px;
