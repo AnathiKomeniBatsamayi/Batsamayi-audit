@@ -360,10 +360,11 @@ transform: scale(1.05);
 .page-links {
 list-style: none;
 padding: 0;
+height: 144px;
 }
 
 .page-links li {
-margin-bottom: 10px;
+margin-bottom: px;
 }
 
 .page-links a {
@@ -376,7 +377,7 @@ transition: color 0.3s ease-in-out;
 
 .company-address {
 margin-top: 20px;
-font-size: 14px;
+font-size: 16px;
 }
 
 .section-heading {
