@@ -113,7 +113,12 @@ a:hover{
     margin-left: 300px;
     margin-right: 300px;
 }
-
+#intro{
+    scroll-margin-top: 80px;
+}
+#services{
+    scroll-margin-top: 80px;
+}
 
 @media screen and (max-width: 1420px) {
     .introduction-heading {
@@ -137,6 +142,12 @@ a:hover{
         padding-left: 200px;
         padding-right: 200px;
     }
+    #intro{
+        scroll-margin-top: 140px;
+            }
+            #services{
+                scroll-margin-top: 80px;
+            }
 }
 
 @media screen and (max-width: 1080px) {
@@ -282,6 +293,12 @@ button[type="button"] {
     .container{
         padding: 0px;
     }
+    #intro{
+scroll-margin-top: 140px;
+    }
+    #services{
+        scroll-margin-top: 155px;
+    }
 }
 @media screen and (max-width: 991px) {
     .contact-form {
@@ -295,6 +312,12 @@ button[type="button"] {
     .container{
         padding: 0px;
     }
+    #intro{
+        scroll-margin-top: 140px;
+            }
+            #services{
+                scroll-margin-top: 155px;
+            }
 }
 /* Adjustments for smaller screen sizes */
 @media screen and (max-width: 768px) {
@@ -322,6 +345,13 @@ button[type="button"] {
     .container{
         padding: 0px;
     }
+    #intro{
+        scroll-margin-top: 140px;
+            }
+    
+    #services{
+                scroll-margin-top: 155px;
+            }
 }
 
 /* Adjustments for even smaller screen sizes */
@@ -342,7 +372,13 @@ button[type="button"] {
         padding: 0px;
        
     }
-
+    #intro{
+        scroll-margin-top: 140px;
+            }
+    #services{
+        scroll-margin-top: 155px;
+    }
+    
 }
 
 .custom-alert {
