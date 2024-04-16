@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Text Multiple Times</title>
+</head>
+<body>
+
+<p id="changeMe">This text will change multiple times.</p>
+
+<script>
+var texts = [
+  "First text",
+  "Second text",
+  "Third text",
+  "Fourth text",
+  "Fifth text"
+];
+
+var currentIndex = 0;
+
+function changeText() {
+  document.getElementById('changeMe').innerHTML = texts[currentIndex];
+  currentIndex = (currentIndex + 1) % texts.length; // Loop back to the beginning if currentIndex exceeds the array length
+  setTimeout(changeText, 2000); // Change text every 2 seconds
+}
+
+// Start changing text
+changeText();
+</script>
+
+</body>
+</html>

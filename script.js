@@ -115,3 +115,21 @@ document.getElementById('contact-link').addEventListener('click', function(event
     event.preventDefault();
     scrollToSection('Contact');
 });
+var texts = [
+    "First text",
+    "Second text",
+    "Third text",
+    "Fourth text",
+    "Fifth text"
+  ];
+  
+  var currentIndexr = 0;
+  
+  function changeText() {
+    document.getElementById('changeMe').innerHTML = texts[currentIndexr];
+    currentIndexr = (currentIndexr + 1) % texts.length; // Loop back to the beginning if currentIndex exceeds the array length
+    setTimeout(changeText, 2000); // Change text every 2 seconds
+  }
+  
+  // Start changing text
+  changeText();
