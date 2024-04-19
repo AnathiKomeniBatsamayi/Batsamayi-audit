@@ -7,12 +7,15 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Full viewport height */
 }
+.newHeader{
 
+}
 header {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: transparent;
+    padding-top: 100px;
     padding: 20px;
     transition: background-color 0.3s, color 0.3s;
     display: flex;
@@ -20,6 +23,7 @@ header {
     align-items: center;
     z-index: 1001;
     text-decoration: none;
+    padding-right: 0px;
   }
   .nav-items {
     padding-right: 300px;
@@ -65,7 +69,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: transparent;
+    background-color: #1e1e1e;
     padding: 20px;
     transition: background-color 0.3s, color 0.3s;
     display: flex;
@@ -76,7 +80,7 @@ header {
   
   header.scrolled {
     background-color: rgb(216, 208, 208);
-    color: black;
+    color: #1e1e1e;
   }
   
   .logo-container {
@@ -146,9 +150,7 @@ header {
     background-color: transparent;
   }
   
-  .nav-items {
-  padding-right: 300px;
-  }
+  
   
   nav a {
     color: white;
@@ -208,7 +210,7 @@ header {
       padding-right: 200px;
     }
     .nav-items {
-      padding-right: 200px;
+      padding-right: 300px;
     }
     .textBanner {
       padding-left: 250px;
@@ -232,7 +234,7 @@ header {
       width: fit-content;
       justify-content: center;
       padding-left: 100px;
-      padding-right: 100px;
+      padding-right: 50px;
     }
     .textBanner {
       padding-left: 150px;
@@ -257,6 +259,12 @@ header {
 }
 .title h1{
     font-size: 42pt;
+}
+.nav-items{
+  padding-right: 150px;
+}
+.logo-container{
+  padding-left: 150px;
 }
   }
   @media screen and (max-width: 1190px){
