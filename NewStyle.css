@@ -451,6 +451,7 @@ header {
   .company-address {
   margin-top: 20px;
   font-size: 16px;
+  font-style: italic;
   }
   
   .section-heading {
