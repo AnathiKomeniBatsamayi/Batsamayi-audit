@@ -40,7 +40,9 @@ header {
 
 .title {
     text-align: center;
-    padding-top: 620px;
+    padding-top: 200px;
+    padding-bottom: 80px;
+    z-index: 20;
 }
 
 .title h1{
@@ -214,15 +216,9 @@ header {
     .textBannerSecondLine {
       padding-left: 250px;
     }
-  .title{
-    padding-top: 670px;
-  }
   }
   
   @media screen and (max-width: 1080px) {
-    .title{
-        padding-top: 380px;
-    }
     .logo-container {
       width: 100%;
       padding-left: 0px;
@@ -256,7 +252,6 @@ header {
   }
   @media screen and (max-width: 1500px){
 .title{
-    padding-top: 380px;
     margin-right: 200px;
     margin-left: 200px;
 }
@@ -266,7 +261,6 @@ header {
   }
   @media screen and (max-width: 1190px){
     .title{
-        padding-top: 380px;
         margin-right: 200px;
         margin-left: 200px;
     }
@@ -275,7 +269,6 @@ header {
     }
     @media screen and (max-width: 1114px){
         .title{
-            padding-top: 380px;
             margin-right: 100px;
             margin-left: 100px;
         }
@@ -286,7 +279,6 @@ header {
       
     @media screen and (max-width: 860px){
         .title{
-            padding-top: 380px;
             margin-right: 100px;
             margin-left: 100px;
         }
@@ -296,7 +288,6 @@ header {
       }
       @media screen and (max-width: 780px){
         .title{
-            padding-top: 380px;
             margin-right: 100px;
             margin-left: 100px;
         }
@@ -306,7 +297,6 @@ header {
       }
       @media screen and (max-width: 700px){
         .title{
-            padding-top: 380px;
             margin-right: 20px;
             margin-left: 20px;
         }
@@ -316,8 +306,6 @@ header {
       }
 @media screen and (max-width: 500px) {
     .title{
-        
-        padding-top: 570px;
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -519,6 +507,7 @@ header {
     margin-bottom: 50px;
     font-family: 'Roboto';
     min-height: 250px;
+    color: black;
     }
 
     .gradient-overlay-left {
@@ -541,6 +530,7 @@ header {
     font-family: 'Roboto';
     text-align: right;
     min-height: 250px;
+    color: black;
     }
 
     .gradient-overlay-right {
@@ -892,3 +882,27 @@ scroll-margin-top: 150px;
     z-index: 9998; /* Make sure it's behind the alert but above other content */
     display: none; /* Initially hidden */
 }
+
+@media screen and (min-height: 620px) {
+  .title {
+    padding-top: 300px;
+    padding-bottom: 150px;
+  }
+}
+@media screen and (min-height: 860px) {
+  .title {
+    padding-top: 400px;
+    padding-bottom: 250px;
+  }
+}
+
+/*Bubble Particles Start*/
+.particle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.particle-container {
+  padding: 200px;
+}
+/*Bubble Particles End*/
