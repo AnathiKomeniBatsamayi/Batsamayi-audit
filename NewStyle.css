@@ -934,8 +934,6 @@ scroll-margin-top: 150px;
 @media screen and (max-width: 1080px) {
   .hamburger {
       display: block;
-      align-content: center;
-      padding-left: 50px;
   }
 
   nav {
