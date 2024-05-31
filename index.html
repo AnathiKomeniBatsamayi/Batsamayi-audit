@@ -27,6 +27,9 @@
         </div>
     </div>
      <div class="nav-items" style="text-decoration: none;">
+        <div class="hamburger" style="align-items: center;" onclick="toggleNav()">
+            &#9776; <!-- Hamburger Icon -->
+        </div>
         <nav >
             <a href="/bespokeaudit/" style="font-size: 15pt;" id="/">Home</a>
             <a href="#intro" style="font-size: 15pt;" id="#about">About</a>
@@ -175,6 +178,21 @@
 
 <script src="Particles.js">
     
+</script>
+<script>
+    function toggleNav() {
+        var nav = document.querySelector('nav');
+        var overlay = document.querySelector('.overlay');
+        nav.classList.toggle('active');
+        var hamburger = document.querySelector(".hamburger");
+    
+    if (nav.classList.contains("active")) {
+        hamburger.style.paddingLeft = "50px";
+    } else {
+        hamburger.style.paddingLeft = "0";
+    }
+       
+    }
 </script>
 <script>
     var texts = [

@@ -222,19 +222,13 @@ header {
   
   @media screen and (max-width: 1080px) {
     .logo-container {
-      width: 100%;
-      padding-left: 0px;
-      padding-right: 0px;
-      padding-bottom: 20px;
-      padding-top: 20px;
+      padding-left: 20px;
+      font-size: 8pt;
       justify-content: center;
     }
     .nav-items {
-      margin: auto;
-      width: fit-content;
-      justify-content: center;
-      padding-left: 100px;
-      padding-right: 50px;
+      padding-right: 20px;
+      font-size: medium;
     }
     .textBanner {
       padding-left: 150px;
@@ -242,10 +236,7 @@ header {
     .textBannerSecondLine {
       padding-left: 150px;
     }
-    header {
-      display: inline;
-      
-    }
+    
   
     .col{
       margin-left: 0px;
@@ -920,3 +911,54 @@ scroll-margin-top: 150px;
   padding: 200px;
 }
 /*Bubble Particles End*/
+
+/*Hambuger Button*/
+.hamburger {
+  display: none;
+  font-size: 24px; /* Increase size of hamburger button */
+  cursor: pointer;
+  color: white;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 999; /* Ensures overlay is on top of other content */
+}
+
+@media screen and (max-width: 1080px) {
+  .hamburger {
+      display: block;
+      align-content: center;
+      padding-left: 50px;
+  }
+
+  nav {
+      display: none;
+  }
+
+  nav.active {
+      display: block;
+  }
+
+  nav a {
+      display: block;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .overlay.active {
+      display: block;
+  }
+}
+@media screen and (max-width: 680px) {
+  .hamburger {
+      display: block;
+      padding-left: 0px;
+  }
+}
